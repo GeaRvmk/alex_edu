@@ -1,37 +1,55 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.CodeDom;
+using System.Runtime.InteropServices;
+
 
 namespace ConsoleApplicationSort
 {
+    /// <summary>
+    ///  This class performs the initialization, the insertion sort and console
+    ///  output of an array 
+    /// </summary>
     class InsertionSort
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int m = 100;
-            int[] array = new int[m];
-            Random r = new Random();
-            Console.WriteLine("Non-sorted array:");
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = r.Next(m);
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine("Sorted array:");
-            sort(array);
-            printArray(array);
+            const int m = 29;
+            var array = new int[m];
+            var r = new Random();
+            const string message1 = "Non-sorted array:";
+            const string message2 = "Sorted array:";
+            Initialize(array, m, r);
+            PrintArray(array, message1);
+            Sort(array);
+            PrintArray(array, message2);
             Console.Read();
         }
-        public static void sort(int[] array)
+
+        /// <summary>
+        /// This function realizes the initialization of array.
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="m"></param>
+        /// <param name="r"></param>
+        public static void Initialize (int[] array, int m, Random r)
         {
-            //int[] result = new int[array.Length];
-            for (int i = 0; i < array.Length; i++)
+            for (var i = 0; i < array.Length; i++)
             {
-                int key = array[i];
-                int j = i;
+                array[i] = r.Next(m);
+            }
+
+        }
+
+        /// <summary>
+        /// This function realizes insertion sort of array.
+        /// </summary>
+        /// <param name="array"></param>
+        public static void Sort (int[] array)
+        {
+            for (var i = 0; i < array.Length; i++)
+            {
+                var key = array[i];
+                var j = i;
                 while (j > 0 && key < array[j - 1])
                 {
                     array[j] = array[j - 1];
@@ -44,12 +62,19 @@ namespace ConsoleApplicationSort
             
         }
 
-        public static void printArray(int[] array)
+        /// <summary>
+        /// This function realizes output stream of array.
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="message"></param>
+        public static void PrintArray(int[] array, String message)
         {
-            for (int i = 0; i < array.Length; i++)
+            Console.WriteLine(message);
+            foreach (var t in array)
             {
-                Console.Write(array[i] + " ");
+                Console.Write(t + " ");
             }
+            Console.WriteLine();
         }
     }
 }

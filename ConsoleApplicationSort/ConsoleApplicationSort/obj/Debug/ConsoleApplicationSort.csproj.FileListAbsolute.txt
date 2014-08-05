@@ -7,3 +7,9 @@ C:\Users\Alex\Documents\Visual Studio 2012\Projects\ConsoleApplicationSort\Conso
 C:\Users\Aleksey\Desktop\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\bin\Debug\ConsoleApplicationSort.exe.config
 C:\Users\Aleksey\Desktop\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\obj\Debug\ConsoleApplicationSort.exe
 C:\Users\Aleksey\Desktop\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\obj\Debug\ConsoleApplicationSort.pdb
+C:\Users\Alex\Desktop\alex_folder\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\bin\Debug\ConsoleApplicationSort.exe.config
+C:\Users\Alex\Desktop\alex_folder\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\bin\Debug\ConsoleApplicationSort.exe
+C:\Users\Alex\Desktop\alex_folder\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\bin\Debug\ConsoleApplicationSort.pdb
+C:\Users\Alex\Desktop\alex_folder\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\obj\Debug\ConsoleApplicationSort.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\alex_folder\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\obj\Debug\ConsoleApplicationSort.exe
+C:\Users\Alex\Desktop\alex_folder\alex_edu\ConsoleApplicationSort\ConsoleApplicationSort\obj\Debug\ConsoleApplicationSort.pdb
